@@ -1,0 +1,18 @@
+doDispatch->
+getHandler->
+getHandlerAdapter->
+handle->
+applyDefaultViewName->返回值为空的场合，返回默认的view（根据请求path得出来）
+processDispatchResult->处理数据（model）和视图（view），进行渲染（render）
+通过视图解析器找打RedirectView进行渲染，
+一：先找到目标地址的URL：
+
+
+HandlerInterceptor 做拦截器
+--preHandle：执行controller之前
+--postHandle：执行完controller
+--afterCompletion： 整个请求处理完成之后
+
+HttpMessageConverter 做消息转换器
+Converter<S, T>    自定义一些转换器
+
